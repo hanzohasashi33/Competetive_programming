@@ -1,0 +1,37 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    long n;
+    scanf("%ld",&n);
+    long canar[n]; //declaration of the array
+    long i;
+    long max = 0;
+    long count = 0;
+    for(i = 0;i < n;i++)
+    {
+        scanf("%ld ",&canar[i]);
+        if(canar[i] >= max)
+        {
+            max = canar[i]; //could have been optimised further by using a function for comparing max 
+        }
+    }
+    for(i = 0;i < n;i++)
+    {
+        if(canar[i] == max)
+        {
+            count++;
+        }
+    }
+    printf("%ld",count);
+    return 0;
+    
+}

@@ -1,0 +1,35 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char message[10000];
+    int i;
+    int count = 0;
+    scanf("%s",message);
+    int l = strlen(message);
+    for(i = 0;i < l;i+=3)
+    {
+        if(message[i] != 'S')
+        {
+            count += 1;
+        }
+        if(message[i + 1] != 'O')
+        {
+            count += 1;
+        }
+        if(message[i + 2] != 'S')
+        {
+            count += 1;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t > 0)
+    {
+        int a,b;
+        scanf("%d %d",&a,&b);
+        int supremum_a = ceil(sqrt(a));
+        int infemum_b = floor(sqrt(b));
+        int count = infemum_b - supremum_a + 1;
+        printf("%d\n",count);
+        t--;
+    }
+    return 0;
+}

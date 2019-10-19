@@ -1,0 +1,36 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int x1,v1,x2,v2;
+    scanf("%d %d %d %d",&x1,&v1,&x2,&v2);
+    double xrel = abs(x2 - x1);
+    double vrel = abs(v2 - v1);
+    double t = xrel/vrel;
+    int t2 = xrel/vrel;
+    if(x1 < x2 && v1 > v2 || x1 > x2 && v1 < v2)
+    {
+        if(t == t2)
+        {
+            printf("YES");
+        }
+        else
+        {
+            printf("NO");
+        }
+    }
+    else
+    {
+        printf("NO");
+    }
+    return 0;
+
+}
