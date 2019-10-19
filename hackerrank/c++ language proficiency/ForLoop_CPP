@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    string num_array[] = {"one","two","three","four","five","six","seven","eight","nine"};
+    int a,b;
+    scanf("%d\n%d",&a,&b);
+    int i = 0;
+    for(i = a;i <= b;i++)
+    {
+        if(i <= 9)
+        {
+            cout << num_array[i - 1] << '\n';
+        }
+        else
+        {
+            if(i % 2 == 0)
+            {
+                printf("even\n");
+            }
+            else
+            {
+                printf("odd\n");
+            }
+        }
+    }
+    return 0;
+}
