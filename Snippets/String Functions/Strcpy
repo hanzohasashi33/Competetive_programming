@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+void my_strcpy(char *s,char *t)
+{
+  char *ptr = t;
+  while(*s != '\0')
+  {
+    *t = *s;
+    s++;
+    t++;
+  }
+  printf("%s",ptr);
+}
+
+
+int main()
+{
+  char *str1,*str2;
+  str1 =(char *)malloc(256 * sizeof(char));
+  str2 =(char *)malloc(256 * sizeof(char));
+  scanf("%s",str1);
+  my_strcpy(str1, str2);
+  free(str1);
+  free(str2);
+  return 0;
+}
