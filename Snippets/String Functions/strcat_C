@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+void my_strcmp(char *s,char *t)
+{
+  while(*s == *t)
+  {
+    if(*s == '\0' || *t == '\0')
+    {
+      break;
+    }
+    else
+    {
+      s++;
+      t++;
+    }
+  }
+  if(*s == '\0' && *t == '\0')
+  {
+    printf("0");
+  }
+  else
+  {
+    printf("%d",abs(*s - *t));
+  }
+}
+
+
+int main()
+{
+  char *str1,*str2;
+  str1 =(char *)malloc(256 * sizeof(char));
+  str2 =(char *)malloc(256 * sizeof(char));
+  scanf("%s",str1);
+  scanf("%s",str2);
+  my_strcmp(str1, str2);
+  free(str1);
+  free(str2);
+  return 0;
+}
