@@ -1,0 +1,25 @@
+T = input("")
+p1 = 0
+p2 = 0
+d = {}
+
+for i in range(T):
+  s = raw_input()
+  s = s.split(" ")
+
+  p1 += int(s[0])
+  p2 += int(s[1])
+
+  if p1 > p2:
+    d[p1 - p2] = 1
+  else :
+    d[p2 - p1] = 2
+
+
+m = 0;
+
+for t in d:
+  if t > m:
+    m = t
+
+print str(d[m]) + " " + str(m)
