@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+long gcd(long a,long b)
+{
+    if(a == 0)
+    {
+        return b;
+    }
+    else
+    {
+        return gcd(b % a,a);
+    }
+}
+
+
+long lcm(long a,long b)
+{
+    return (a * b)/gcd(a,b);
+}
+
+int main()
+{
+    long t;
+    scanf("%ld",&t);
+    while(t--)
+    {
+        long a,b;
+        scanf("%ld %ld",&a,&b);
+        printf("%ld %ld\n",gcd(a,b),lcm(a,b));
+    }
+    return 0;
+}
