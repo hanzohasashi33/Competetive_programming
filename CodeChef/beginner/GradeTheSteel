@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() 
+{
+  int t;
+  scanf("%d",&t);
+  while(t--)
+  {
+    double hard,carb,tens;
+    scanf("%lf %lf %lf",&hard,&carb,&tens);
+    if(hard > 50 && carb < 0.7 && tens>5600)
+      printf("10");
+    else if(hard > 50 && carb < 0.7)
+      printf("9");
+    else if(carb < 0.7 && tens > 5600)
+      printf("8");
+    else if(hard > 50 && tens > 5600)
+      printf("7");
+    else if(hard > 50 || carb < 0.7 || tens > 5600)
+      printf("6");
+    else
+      printf("5");
+    printf("\n");
+  }
+  return 0;  
+}
