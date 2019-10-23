@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  int t;
+  scanf("%d",&t);
+  while(t --)
+  {
+    int a;
+    scanf("%d",&a);
+    if(a % 10 == 0)
+    {
+      printf("0");
+    }
+    else if(a % 5 == 0 && a % 10 != 0)
+    {
+      printf("1");
+    }
+    else
+    {
+      printf("-1");
+    }
+    printf("\n");
+  }
+  return 0;
+}
