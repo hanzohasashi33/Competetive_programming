@@ -1,0 +1,19 @@
+t = input("")
+
+while(t > 0):
+  n = input("")
+  l1 = []
+  while(n > 0):
+    a = input("")
+    l1.append(a)
+    n -= 1
+  d = {}
+  for x in l1:
+    if x not in d:
+      d[x] = 1
+    else:
+      d[x] += 1
+  for x in d:
+    if(d[x] % 2 != 0):
+      print x
+  t -= 1
