@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+  int t;
+  scanf("%d",&t);
+  while(t --)
+  {
+    int count_a = 0,count_b = 0;
+    char *str; 
+    str = (char *)malloc(1000);
+    scanf("%s",str);
+    while(*str != '\0')
+    {
+      if(*str == 'a')
+      {
+        count_a ++;
+      }
+      else
+      {
+        count_b ++;
+      }
+      str++;
+    }
+    int min = count_a;
+    if(count_b < min)
+    {
+      min  = count_b;
+    }
+    printf("%d\n",min);
+  }
+  return 0;
+}
