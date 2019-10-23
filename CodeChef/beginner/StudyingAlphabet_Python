@@ -1,0 +1,15 @@
+s = raw_input("")
+t = input("")
+
+while(t > 0):
+  count = 0
+  s2 = raw_input("")
+  for i in s2:
+    if i in s:
+      count += 1
+    
+  if count == len(s2):
+    print "Yes"
+  else:
+    print "No"
+    t -= 1;
