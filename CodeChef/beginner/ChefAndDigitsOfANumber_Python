@@ -1,0 +1,16 @@
+t = input("")
+
+while(t > 0):
+  a = raw_input("")
+  count1 = 0
+  count0 = 0
+  for i in a:
+    if i == '1':
+      count1 += 1
+    else:
+      count0 += 1
+  if(count0 == 1 or count1 == 1):
+    print "Yes"
+  else:
+    print "No"
+  t -= 1
