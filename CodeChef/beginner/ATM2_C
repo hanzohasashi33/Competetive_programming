@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+  int t;
+  scanf("%d",&t);
+  while(t --)
+  {
+    int n,k;
+    scanf("%d %d",&n,&k);
+    int money[n];
+    int i = 0;
+    for(i = 0;i < n;i++)
+    {
+      scanf("%d",&money[i]);
+    }
+    int mon[n];
+    int z = 0;
+    for(i = 0;i < n;i++)
+    {
+      if(money[i] <= k)
+      {
+        mon[z++] = 1;
+        k = k - money[i];
+      }
+      else
+      {
+        mon[z++] = 0;
+      }
+    }
+    for(z = 0;z < n;z++)
+    {
+      printf("%d",mon[z]);
+    }
+  }
+  return 0;
+}
