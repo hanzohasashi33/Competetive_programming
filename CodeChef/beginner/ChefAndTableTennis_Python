@@ -1,0 +1,16 @@
+t = input("")
+
+while(t > 0):
+  s = raw_input("")
+  count_1 = 0
+  count_0 = 0
+  for i in s:
+    if i == '1':
+      count_1 += 1
+    else:
+      count_0 += 1
+  if(count_1 > count_0):
+    print "WIN"
+  else:
+    print "LOSE"
+  t -= 1
