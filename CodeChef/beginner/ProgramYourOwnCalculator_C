@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+  double a,b;
+  char operator;
+  scanf("%lf\n%lf\n%c",&a,&b,&operator);
+  if(operator == '+')
+  {
+    printf("%lf",a + b);
+  }
+  else if(operator == '-')
+  {
+    printf("%lf",a - b);
+  }
+  else if(operator == '*')
+  {
+    printf("%lf",a * b);
+  }
+  else
+  {
+    printf("%lf",a/b);
+  }
+  return 0;
+}
