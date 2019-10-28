@@ -1,0 +1,52 @@
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int k;
+    scanf("%d",&k);
+    while(k > 0)
+    {
+        long b,w;
+        long bc,wc,z;
+        scanf("%ld %ld",&b,&w);
+        scanf("%ld %ld %ld",&bc,&wc,&z);
+        long mc;
+        long sum = 0;
+        if(bc > wc)
+        {
+            if(bc > wc + z)
+            {
+                mc = wc + z;
+            }
+            else
+            {
+                mc = bc;
+            }
+            sum = w * wc + b * mc;
+        }
+        else
+        {
+            if(wc > bc + z)
+            {
+                mc = bc + z;
+            }
+            else
+            {
+                mc = wc;
+            }
+            sum = bc * b + w * mc;
+        }
+        printf("%ld\n",sum);
+        k--;
+    }
+    return 0;
+}
