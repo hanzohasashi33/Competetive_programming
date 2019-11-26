@@ -9,7 +9,7 @@ import sys
 # Complete the bigSorting function below.
 def bigSorting(unsorted):
     # you can use a key function. sort takes a named parameter, key, which is a function that is called on each element before it is compared. The key function's return values are compared instead of comparing the list elements directly:
-    return sorted(unsorted,key=int)
+    return sorted(unsorted,key=int)        #returns a sorted array of the unsorted one keeping key as int
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
