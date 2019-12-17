@@ -14,7 +14,7 @@ def insertionsort(l,n) :
 if __name__ == "__main__" :
   n = input("")
   l = []
-  for i in range(n) :
+  for i in range(n) : 
     a = input("")
     l.append(a)
   
