@@ -12,3 +12,13 @@ while test > 0 :
   print(len(q))
   print(''.join(q))
   test -= 1
+
+ '''
+ for _ in range(int(input())):
+    n,t = map(int,input().split())
+    s = input()
+    for i in range(t):
+        s= s.replace("GL","LG")
+    print(n)
+    print(s)
+ '''
