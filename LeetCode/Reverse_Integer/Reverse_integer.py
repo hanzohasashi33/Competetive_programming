@@ -1,3 +1,4 @@
+#brute force
 class Solution:
     def reverse(self, x: int) -> int:
         if x >= 2**31 - 1 or x < -2**31 :
