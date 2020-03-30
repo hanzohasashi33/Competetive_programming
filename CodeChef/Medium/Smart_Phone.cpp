@@ -7,21 +7,16 @@ int main()
   long long n;
   cin >> n;
   long long arr[n];
-  long long i = 0,j = 0;
+  long long i,j = n;
   for(i = 0;i < n;i++) cin >> arr[i];
-  long long sum = 0,sum_max = 0;
-  for(i = 0;i < n;i++)
+  sort(arr,arr + n);
+  long long sumarr[n];
+  long long maxi = INT_MIN;
+  for(int i = 0;i < n;i++,j--)
   {
-    sum = 0;
-    for(j = 0;j < n;j++)
-    {
-      if(arr[j] >= arr[i])
-      {
-        sum += arr[i];
-      }
-    }
-    sum_max = max(sum,sum_max);
+    sumarr[i] = arr[i] * j;
+    maxi = max(maxi,sumarr[i]);
   }
-  cout << sum_max << endl;
+  cout << maxi << endl;
   return 0;
 }
