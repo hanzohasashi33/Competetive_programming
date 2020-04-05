@@ -10,5 +10,6 @@ This repository contains my solutions to thousands of programming challenges fro
 The Hackerrank directory contains solutions for problems on Hackerrank - a competitive progrmming website. Most of the solutions are of implementation problems as of now.
 
 # Codechef
-
+![Codechef](https://www.codechef.com/sites/all/themes/abessive/logo.png)
+***
 solutions to problems from the online competitive coding platform codechef. The repository contains my solutions to various implementation problems ranging across many difficulty levels.
