@@ -7,7 +7,10 @@ This repository contains my solutions to thousands of programming challenges fro
 
 # Hackerrank
 
-The Hackerrank directory contains solutions for problems on Hackerrank - a competitive progrmming website. Most of the solutions are of implementation problems as of now.
+The Hackerrank directory contains solutions for problems on Hackerrank - a competitive progrmming website. Most of the solutions are of implementation problems as of now.<br>
+![Hackerrank](https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png)
+My Profile : https://www.hackerrank.com/Hanzohasashi
+
 
 # Codechef
 ![Codechef](https://www.codechef.com/sites/all/themes/abessive/logo.png)
