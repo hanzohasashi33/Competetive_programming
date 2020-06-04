@@ -1,0 +1,13 @@
+class Solution:
+    def repeatedNTimes(self, A: List[int]) -> int:
+        dict = {}
+        size = len(A)
+        for i in A :
+            if i in dict :
+                dict[i] += 1
+            else :
+                dict[i] = 1
+        
+        for i in dict.keys() :
+            if dict[i] == size/2 :
+                return i
