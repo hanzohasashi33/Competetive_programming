@@ -17,3 +17,5 @@ My Profile : https://www.hackerrank.com/Hanzohasashi
 ![Codechef](https://www.codechef.com/sites/all/themes/abessive/logo.png)
 ***
 solutions to problems from the online competitive coding platform codechef. The repository contains my solutions to various implementation problems ranging across many difficulty levels.
+
+My Profile : https://www.codechef.com/users/hanzohasashi
