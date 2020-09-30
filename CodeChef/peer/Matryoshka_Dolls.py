@@ -14,3 +14,4 @@ while test > 0 :
     if count == n - 1 :
         print("YES")
     test -= 1
+#dish cooked ready to eat
