@@ -17,3 +17,16 @@ My Profile : https://www.hackerrank.com/Hanzohasashi
 ![Codechef](https://www.codechef.com/sites/all/themes/abessive/logo.png)
 ***
 solutions to problems from the online competitive coding platform codechef. The repository contains my solutions to various implementation problems ranging across many difficulty levels.
+
+
+# SPOJ
+![SPOJ](https://stx1.spoj.com/gfx/2015e.png)
+***
+Solutions to various problems from SPOJ. The repository contains solutions of various problems ranging across many programming paragidms from the static judge SPOJ.
+
+
+# AtCoder
+![AtCoder](https://img.atcoder.jp/assets/icon/avatar.png)
+***
+Solutions to various problems from the AtCoder OJ. The repository contains solutions of various problems ranging across many programming paragidms particularily focusing on algorithms from the platform AtCoder.
+
