@@ -1,24 +1,42 @@
-#include<stdio.h>
+include<stdio.h>
+
 int main(){
-	int wamt;
+
+	int wamt;	
 	float tamt;
+
 	scanf("%d %f",&wamt,&tamt);
-	if(wamt % 5 != 0){
-		printf("%.2f",tamt);
+
+	if(wamt % 5 != 0) 
+
+                     printf("%.2f",tamt);
+
+        else
+
+        {
+
+	       if(wamt + 0.5 > tamt)
+
+		  printf("%.2f",tamt);
+
+               if(wamt + 0.5 < tamt)
+
+               {
+
+		  float rem = tamt - wamt - 0.50;
+
+		  printf("%.2f",rem);
+
+	       }
+
+	       if(wamt == 0)
+
+		  printf("%.2f",tamt);
+
 	}
-	else{
-	if(wamt + 0.5 > tamt){
-		printf("%.2f",tamt);
-	}
-	if(wamt + 0.5 < tamt){
-		float rem = tamt - wamt - 0.50;
-		printf("%.2f",rem);
-	}
-	if(wamt == 0){
-		printf("%.2f",tamt);
-	}
-	}
+
 	return 0;
+
 }
 
 //this is a begginer question.
