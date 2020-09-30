@@ -11,3 +11,5 @@ def computeXOR(n) :
 l = 0
 r = int(input())
 print(computeXOR(r) ^ computeXOR(l - 1)) 
+
+#for hacktober fest
